@@ -44,11 +44,13 @@
 		</Linker>
 		<Unit filename="include/ComboBox.hpp" />
 		<Unit filename="include/Master.hpp" />
+		<Unit filename="include/Menu.hpp" />
 		<Unit filename="include/NumberWidget.hpp" />
 		<Unit filename="include/widgets.hpp" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/ComboBox.cpp" />
 		<Unit filename="src/Master.cpp" />
+		<Unit filename="src/Menu.cpp" />
 		<Unit filename="src/NumberWidget.cpp" />
 		<Unit filename="src/widgets.cpp" />
 		<Extensions>

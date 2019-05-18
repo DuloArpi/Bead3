@@ -4,7 +4,7 @@
 #include <string>
 using namespace genv;
 
-Master::Master(int x, int y, int sx, int sy) : _x(x), _y(y), _size_x(sx), _size_y(sy)
+Master::Master()
 {
   std::cout << "Mater\n";
 }
@@ -51,6 +51,14 @@ for(int i=0; i < 7; i++){                                                       
         }
     }
 }
+
+if(nyert == 1) {
+    gout << move_to(370, 680) << color(255,255,255) << text("RED WON!");
+}
+if(nyert == 2) {
+    gout << move_to(370, 680) << color(255,255,255) << text("ORANGE WON!");
+}
+
 }
 
 void Master::place(genv::event ev){
@@ -94,6 +102,7 @@ for(int i=0; i < 4; i++){                                                   //vi
                 elemek[i+2][j] = 3;
                 elemek[i+3][j] = 3;
                 gameover = true;
+                nyert = gamer;
                 break;
             }
         }
@@ -110,6 +119,7 @@ for(int i=0; i < 7; i++){                                                   //fu
                 elemek[i][j+2] = 3;
                 elemek[i][j+3] = 3;
                 gameover = true;
+                nyert = gamer;
                 break;
 
             }
@@ -129,6 +139,7 @@ for(int i=0; i < 4; i++){                                                   //jo
                 elemek[i+2][j+2] = 3;
                 elemek[i+3][j+3] = 3;
                 gameover = true;
+                nyert = gamer;
                 break;
 
             }
@@ -146,15 +157,16 @@ for(int i=0; i < 4; i++){                                                   //ba
                 elemek[i+2][j-2] = 3;
                 elemek[i+3][j-3] = 3;
                 gameover = true;
+                nyert = gamer;
                 break;
 
             }
     }
+
         if(gameover){
             break;
         }
 }
-
 
 
 

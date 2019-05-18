@@ -3,8 +3,10 @@
 #include "NumberWidget.hpp"
 #include "ComboBox.hpp"
 #include "Master.hpp"
+#include "Menu.hpp"
 #include <vector>
 #include <string>
+#include <iostream>
 using namespace std;
 using namespace genv;
 
@@ -33,21 +35,12 @@ void event_loop(vector<Widget*>& widgets) {
 */
 int main()
 {
-    int game = false, gameover = false, menu = true;
+    int game = false, gameover = false, menu = true, kilep = false;
     gout.open(800,700);
-    vector<Widget*> w;
-    vector<string> cuccok = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday", "Hétfõ", "Kedd", "Szerda", "Csütörtök", "Péntek", "Szombat", "Vasárnap"};
-    vector<string> cuccok2 = {"Egy", "Kettõ", "Három"};
-
-                                        // x, y, x meret, y meret, kezdoszam, min, max korl
-    NumberWidget * n1 = new NumberWidget(250, 250, 140, 130, 2, -10, 12);
-    NumberWidget * n2 = new NumberWidget(10, 250, 70, 40, 2, -5, 7);
-
-                                        // x, y, x meret, y meret, megjelenitedo elemek szama
-    ComboBox * c1 = new ComboBox(10, 10, 100, 30, 5);
-    ComboBox * c2 = new ComboBox(10, 10, 70, 30, 3);
     genv::event ev;
-    Master * jatek = new Master(0,0,800,650);
+    Master * jatek = new Master();
+
+ while (kilep == false){
 
     while(gin >> ev && game == true) {
         if(jatek->reset == true){
@@ -58,22 +51,25 @@ int main()
         jatek->check();
         jatek->draw(ev);
         gout <<refresh;
-
-
+    }
+    Menu * menuben = new Menu(&menu, &game);
+    while(gin >> ev && menu == true) {
+        menuben->draw(ev);
+        if(menuben->begin(ev) == true){
+            menu=false;
+            game=true;
+        }
+        if(menuben->end(ev) == true){
+            menu=false;
+        }
+        gout << refresh;
     }
 
 
-    w.push_back(n1);
-    w.push_back(n2);
-    c1->load(cuccok);
-    w.push_back(c1);
-    c2->load(cuccok2);
-    w.push_back(c2);
+if(menu == false && game == false){
+    kilep = true;
+}
+}
 
-    for (Widget * wg : w) {
-        wg->draw();
-    }
-    gout << refresh;
-//    event_loop(w);
     return 0;
 }

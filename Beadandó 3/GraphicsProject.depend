@@ -54,3 +54,85 @@
 	"widgets.hpp"
 	<vector>
 
+1555543761 source:c:\users\x\desktop\bead3\beadandó 3\src\combobox.cpp
+	"ComboBox.hpp"
+	"graphics.hpp"
+	<string>
+	<vector>
+
+1555543761 c:\users\x\desktop\bead3\beadandó 3\include\combobox.hpp
+	<string>
+	"graphics.hpp"
+	"widgets.hpp"
+	<vector>
+
+1488260528 c:\users\x\desktop\bead3\beadandó 3\include\graphics.hpp
+	<string>
+
+1555543761 c:\users\x\desktop\bead3\beadandó 3\include\widgets.hpp
+	<string>
+	"graphics.hpp"
+
+1558200104 source:c:\users\x\desktop\bead3\beadandó 3\src\master.cpp
+	"Master.hpp"
+	"graphics.hpp"
+	<iostream>
+	<string>
+
+1558199572 c:\users\x\desktop\bead3\beadandó 3\include\master.hpp
+	<string>
+	"graphics.hpp"
+	"widgets.hpp"
+	<vector>
+
+1555543761 source:c:\users\x\desktop\bead3\beadandó 3\src\numberwidget.cpp
+	"NumberWidget.hpp"
+	"graphics.hpp"
+	<string>
+
+1555543761 c:\users\x\desktop\bead3\beadandó 3\include\numberwidget.hpp
+	"graphics.hpp"
+	"widgets.hpp"
+
+1555543761 source:c:\users\x\desktop\bead3\beadandó 3\src\widgets.cpp
+	"widgets.hpp"
+	"graphics.hpp"
+	<iostream>
+	<string>
+
+1558200194 source:c:\users\x\desktop\bead3\beadandó 3\main.cpp
+	"graphics.hpp"
+	"widgets.hpp"
+	"NumberWidget.hpp"
+	"ComboBox.hpp"
+	"Master.hpp"
+	"Menu.hpp"
+	<vector>
+	<string>
+	<iostream>
+
+1558196314 c:\users\x\desktop\bead3\beadandó 3\include\button.hpp
+	<string>
+	"graphics.hpp"
+	"widgets.hpp"
+	<vector>
+
+1558196305 source:c:\users\x\desktop\bead3\beadandó 3\src\button.cpp
+	"Button.hpp"
+	"graphics.hpp"
+	<string>
+	<vector>
+
+1558199239 source:c:\users\x\desktop\bead3\beadandó 3\src\menu.cpp
+	"Menu.hpp"
+	"graphics.hpp"
+	<string>
+	<iostream>
+	<vector>
+
+1558200104 c:\users\x\desktop\bead3\beadandó 3\include\menu.hpp
+	<string>
+	"graphics.hpp"
+	"widgets.hpp"
+	<vector>
+
