@@ -30,3 +30,38 @@
 *.exe
 *.out
 *.app
+Beadandó 3/include/SDL/begin_code.h
+Beadandó 3/include/SDL/close_code.h
+Beadandó 3/include/SDL/SDL.h
+Beadandó 3/include/SDL/SDL_active.h
+Beadandó 3/include/SDL/SDL_audio.h
+Beadandó 3/include/SDL/SDL_byteorder.h
+Beadandó 3/include/SDL/SDL_cdrom.h
+Beadandó 3/include/SDL/SDL_config.h
+Beadandó 3/include/SDL/SDL_copying.h
+Beadandó 3/include/SDL/SDL_cpuinfo.h
+Beadandó 3/include/SDL/SDL_endian.h
+Beadandó 3/include/SDL/SDL_error.h
+Beadandó 3/include/SDL/SDL_events.h
+Beadandó 3/include/SDL/SDL_getenv.h
+Beadandó 3/include/SDL/SDL_joystick.h
+Beadandó 3/include/SDL/SDL_keyboard.h
+Beadandó 3/include/SDL/SDL_keysym.h
+Beadandó 3/include/SDL/SDL_loadso.h
+Beadandó 3/include/SDL/SDL_main.h
+Beadandó 3/include/SDL/SDL_mouse.h
+Beadandó 3/include/SDL/SDL_mutex.h
+Beadandó 3/include/SDL/SDL_name.h
+Beadandó 3/include/SDL/SDL_opengl.h
+Beadandó 3/include/SDL/SDL_platform.h
+Beadandó 3/include/SDL/SDL_quit.h
+Beadandó 3/include/SDL/SDL_rwops.h
+Beadandó 3/include/SDL/SDL_stdinc.h
+Beadandó 3/include/SDL/SDL_syswm.h
+Beadandó 3/include/SDL/SDL_thread.h
+Beadandó 3/include/SDL/SDL_timer.h
+Beadandó 3/include/SDL/SDL_ttf.h
+Beadandó 3/include/SDL/SDL_types.h
+Beadandó 3/include/SDL/SDL_version.h
+Beadandó 3/include/SDL/SDL_video.h
+Beadandó 3/LiberationSans-Regular.ttf

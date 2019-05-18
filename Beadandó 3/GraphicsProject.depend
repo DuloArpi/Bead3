@@ -1,0 +1,56 @@
+# depslib dependency file v1.0
+1558193261 source:c:\users\x\desktop\beadandó 3\main.cpp
+	"graphics.hpp"
+	"widgets.hpp"
+	"NumberWidget.hpp"
+	"ComboBox.hpp"
+	"Master.hpp"
+	<vector>
+	<string>
+
+1488260528 c:\users\x\desktop\beadandó 3\include\graphics.hpp
+	<string>
+
+1555543761 c:\users\x\desktop\beadandó 3\include\widgets.hpp
+	<string>
+	"graphics.hpp"
+
+1555543761 c:\users\x\desktop\beadandó 3\include\numberwidget.hpp
+	"graphics.hpp"
+	"widgets.hpp"
+
+1555543761 c:\users\x\desktop\beadandó 3\include\combobox.hpp
+	<string>
+	"graphics.hpp"
+	"widgets.hpp"
+	<vector>
+
+1555543761 source:c:\users\x\desktop\beadandó 3\src\combobox.cpp
+	"ComboBox.hpp"
+	"graphics.hpp"
+	<string>
+	<vector>
+
+1555543761 source:c:\users\x\desktop\beadandó 3\src\numberwidget.cpp
+	"NumberWidget.hpp"
+	"graphics.hpp"
+	<string>
+
+1555543761 source:c:\users\x\desktop\beadandó 3\src\widgets.cpp
+	"widgets.hpp"
+	"graphics.hpp"
+	<iostream>
+	<string>
+
+1558194405 source:c:\users\x\desktop\beadandó 3\src\master.cpp
+	"Master.hpp"
+	"graphics.hpp"
+	<iostream>
+	<string>
+
+1558193261 c:\users\x\desktop\beadandó 3\include\master.hpp
+	<string>
+	"graphics.hpp"
+	"widgets.hpp"
+	<vector>
+
