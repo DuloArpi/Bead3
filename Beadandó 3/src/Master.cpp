@@ -136,15 +136,21 @@ valid = false;
             if(ev.pos_x < 100 && ev.pos_x >0 && ev.pos_y > 650){
                 reset = true;
                 gameover = false;
+            //    nyert = 0;
+
 
             }
         }
    }
+
+
 }
 
 
 
 void Master::check(){
+
+if(gameover == false && nyert ==0){
 
 for(int i=0; i < 4; i++){                                                   //vizszintes ellenorzes
     for(int j=0; j < 6; j++){
@@ -177,11 +183,10 @@ for(int i=0; i < 7; i++){                                                   //fu
 
             }
     }
-        if(gameover){
-            break;
-        }
+    if(gameover){
+        break;
+    }
 }
-
 
 for(int i=0; i < 4; i++){                                                   //jobb folfele nezo ellenorzes
     for(int j=0; j < 3; j++){
@@ -219,19 +224,23 @@ for(int i=0; i < 4; i++){                                                   //ba
         if(gameover){
             break;
         }
+
+}
+
+
+}
+
+
 bool vege = true;
 for(int i=0; i < 6; i++)  {
-
     if(elemek[i][5] == 0){
         vege = false;
 
     }
-
-
 }
 if (vege == true){
-nyert = 3;
-gameover = true;
+    nyert = 3;
+    gameover = true;
 
 }
 
@@ -250,7 +259,7 @@ gameover = true;
 
 
 
-}
+
 
 
 
