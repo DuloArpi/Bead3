@@ -12,6 +12,7 @@ protected:
     bool valid = false;
     bool end = false;
 public:
+    bool kiakarlepni = false;
     bool gameover = false;
     int gamer = 1;
     bool reset = true;

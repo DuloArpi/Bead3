@@ -58,6 +58,41 @@ if(nyert == 1) {
 if(nyert == 2) {
     gout << move_to(370, 680) << color(255,255,255) << text("ORANGE WON!");
 }
+if(nyert == 3) {
+    gout << move_to(370, 680) << color(255,255,255) << text("DRAW!");
+}
+
+
+
+if(gameover == true) {
+
+    if(ev.pos_x < 100 && ev.pos_x >0 && ev.pos_y > 650){
+            gout << color(255,255,255) << move_to(0,650) << box(100,50) << move_to(5,655) << color(0,128,255) << box(90,40) << move_to(25, 680) << color(255,255,255) << text("RESTART");
+            gout << color(255,255,255) << move_to(700,650) << box(100,50) << move_to(705,655) << color(0,0,102) << box(90,40) << move_to(730, 680) << color(255,255,255) << text("EXIT");
+    }
+    else if(ev.pos_x < 800 && ev.pos_x >700 && ev.pos_y > 650){
+
+            gout << color(255,255,255) << move_to(700,650) << box(100,50) << move_to(705,655) << color(0,128,255) << box(90,40) << move_to(730, 680) << color(255,255,255) << text("EXIT");
+            gout << color(255,255,255) << move_to(0,650) << box(100,50) << move_to(5,655) << color(0,0,102) << box(90,40) << move_to(25, 680) << color(255,255,255) << text("RESTART");
+    }
+    else {
+        gout << color(255,255,255) << move_to(0,650) << box(100,50) << move_to(5,655) << color(0,0,102) << box(90,40) << move_to(25, 680) << color(255,255,255) << text("RESTART");
+            gout << color(255,255,255) << move_to(700,650) << box(100,50) << move_to(705,655) << color(0,0,102) << box(90,40) << move_to(730, 680) << color(255,255,255) << text("EXIT");
+    }
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
 
 }
 
@@ -89,7 +124,25 @@ valid = false;
 
       }
     }
+
+
+   if(ev.type == ev_mouse) {
+        if(ev.button == btn_left) {
+
+            if(ev.pos_x < 800 && ev.pos_x >700 && ev.pos_y > 650){
+                kiakarlepni = true;
+
+            }
+            if(ev.pos_x < 100 && ev.pos_x >0 && ev.pos_y > 650){
+                reset = true;
+                gameover = false;
+
+            }
+        }
+   }
 }
+
+
 
 void Master::check(){
 
@@ -166,7 +219,24 @@ for(int i=0; i < 4; i++){                                                   //ba
         if(gameover){
             break;
         }
+bool vege = true;
+for(int i=0; i < 6; i++)  {
+
+    if(elemek[i][5] == 0){
+        vege = false;
+
+    }
+
+
 }
+if (vege == true){
+nyert = 3;
+gameover = true;
+
+}
+
+}
+
 
 
 

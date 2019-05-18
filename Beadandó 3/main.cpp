@@ -10,29 +10,6 @@
 using namespace std;
 using namespace genv;
 
-/*
-void event_loop(vector<Widget*>& widgets) {
-    event ev;
-    int focus = -1;
-    while(gin >> ev ) {
-        if (ev.type == ev_mouse && ev.button==btn_left) {
-            for (size_t i=0;i<widgets.size();i++) {
-                if (widgets[i]->is_selected(ev.pos_x, ev.pos_y)) {
-                        focus = i;
-                }
-            }
-        }
-        if (focus!=-1) {
-            widgets[focus]->handle(ev);
-        }
-        gout << move_to(0,0) << color(0,0,0) << box(800,700);
-        for (Widget * w : widgets) {
-            w->draw();
-        }
-        gout << refresh;
-    }
-}
-*/
 int main()
 {
     int game = false, gameover = false, menu = true, kilep = false;
@@ -50,6 +27,9 @@ int main()
         jatek->is_selected(ev);
         jatek->check();
         jatek->draw(ev);
+        if(jatek->kiakarlepni == true){
+            game = false;
+        }
         gout <<refresh;
     }
     Menu * menuben = new Menu(&menu, &game);

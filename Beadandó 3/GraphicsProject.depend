@@ -73,13 +73,13 @@
 	<string>
 	"graphics.hpp"
 
-1558200104 source:c:\users\x\desktop\bead3\beadandó 3\src\master.cpp
+1558203698 source:c:\users\x\desktop\bead3\beadandó 3\src\master.cpp
 	"Master.hpp"
 	"graphics.hpp"
 	<iostream>
 	<string>
 
-1558199572 c:\users\x\desktop\bead3\beadandó 3\include\master.hpp
+1558203443 c:\users\x\desktop\bead3\beadandó 3\include\master.hpp
 	<string>
 	"graphics.hpp"
 	"widgets.hpp"
@@ -100,7 +100,7 @@
 	<iostream>
 	<string>
 
-1558200194 source:c:\users\x\desktop\bead3\beadandó 3\main.cpp
+1558203443 source:c:\users\x\desktop\bead3\beadandó 3\main.cpp
 	"graphics.hpp"
 	"widgets.hpp"
 	"NumberWidget.hpp"
